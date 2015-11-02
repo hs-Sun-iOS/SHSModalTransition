@@ -15,10 +15,10 @@
 		3A5EBFE81BE6FDFD00FD7136 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A5EBFE61BE6FDFD00FD7136 /* LaunchScreen.storyboard */; };
 		3A5EBFF31BE6FDFD00FD7136 /* SHSModalTransitionDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A5EBFF21BE6FDFD00FD7136 /* SHSModalTransitionDemoTests.m */; };
 		3A5EBFFE1BE6FDFD00FD7136 /* SHSModalTransitionDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A5EBFFD1BE6FDFD00FD7136 /* SHSModalTransitionDemoUITests.m */; };
-		3A5EC00E1BE700B000FD7136 /* SHSPresentationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A5EC00D1BE700B000FD7136 /* SHSPresentationController.m */; settings = {ASSET_TAGS = (); }; };
-		3A5EC0111BE701CB00FD7136 /* UIViewController+SHSModalTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A5EC0101BE701CB00FD7136 /* UIViewController+SHSModalTransition.m */; settings = {ASSET_TAGS = (); }; };
-		3A5EC0141BE7240300FD7136 /* SHSAnimatedTransitioningController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A5EC0131BE7240300FD7136 /* SHSAnimatedTransitioningController.m */; settings = {ASSET_TAGS = (); }; };
 		3A5EC0171BE768C000FD7136 /* PresentedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A5EC0161BE768C000FD7136 /* PresentedViewController.m */; settings = {ASSET_TAGS = (); }; };
+		3A5EC01F1BE76BE000FD7136 /* SHSAnimatedTransitioningController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A5EC01A1BE76BE000FD7136 /* SHSAnimatedTransitioningController.m */; settings = {ASSET_TAGS = (); }; };
+		3A5EC0201BE76BE000FD7136 /* SHSPresentationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A5EC01C1BE76BE000FD7136 /* SHSPresentationController.m */; settings = {ASSET_TAGS = (); }; };
+		3A5EC0211BE76BE000FD7136 /* UIViewController+SHSModalTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A5EC01E1BE76BE000FD7136 /* UIViewController+SHSModalTransition.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,14 +55,14 @@
 		3A5EBFF91BE6FDFD00FD7136 /* SHSModalTransitionDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SHSModalTransitionDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A5EBFFD1BE6FDFD00FD7136 /* SHSModalTransitionDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SHSModalTransitionDemoUITests.m; sourceTree = "<group>"; };
 		3A5EBFFF1BE6FDFD00FD7136 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3A5EC00C1BE700B000FD7136 /* SHSPresentationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHSPresentationController.h; sourceTree = "<group>"; };
-		3A5EC00D1BE700B000FD7136 /* SHSPresentationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHSPresentationController.m; sourceTree = "<group>"; };
-		3A5EC00F1BE701CB00FD7136 /* UIViewController+SHSModalTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+SHSModalTransition.h"; sourceTree = "<group>"; };
-		3A5EC0101BE701CB00FD7136 /* UIViewController+SHSModalTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+SHSModalTransition.m"; sourceTree = "<group>"; };
-		3A5EC0121BE7240300FD7136 /* SHSAnimatedTransitioningController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHSAnimatedTransitioningController.h; sourceTree = "<group>"; };
-		3A5EC0131BE7240300FD7136 /* SHSAnimatedTransitioningController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHSAnimatedTransitioningController.m; sourceTree = "<group>"; };
 		3A5EC0151BE768C000FD7136 /* PresentedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PresentedViewController.h; sourceTree = "<group>"; };
 		3A5EC0161BE768C000FD7136 /* PresentedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PresentedViewController.m; sourceTree = "<group>"; };
+		3A5EC0191BE76BE000FD7136 /* SHSAnimatedTransitioningController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHSAnimatedTransitioningController.h; sourceTree = "<group>"; };
+		3A5EC01A1BE76BE000FD7136 /* SHSAnimatedTransitioningController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHSAnimatedTransitioningController.m; sourceTree = "<group>"; };
+		3A5EC01B1BE76BE000FD7136 /* SHSPresentationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHSPresentationController.h; sourceTree = "<group>"; };
+		3A5EC01C1BE76BE000FD7136 /* SHSPresentationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHSPresentationController.m; sourceTree = "<group>"; };
+		3A5EC01D1BE76BE000FD7136 /* UIViewController+SHSModalTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+SHSModalTransition.h"; sourceTree = "<group>"; };
+		3A5EC01E1BE76BE000FD7136 /* UIViewController+SHSModalTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+SHSModalTransition.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,7 +113,7 @@
 		3A5EBFD71BE6FDFD00FD7136 /* SHSModalTransitionDemo */ = {
 			isa = PBXGroup;
 			children = (
-				3A5EC00B1BE6FE0600FD7136 /* SHSModalTransition */,
+				3A5EC0181BE76BE000FD7136 /* SHSModalTransition */,
 				3A5EBFDB1BE6FDFD00FD7136 /* AppDelegate.h */,
 				3A5EBFDC1BE6FDFD00FD7136 /* AppDelegate.m */,
 				3A5EBFDE1BE6FDFD00FD7136 /* ViewController.h */,
@@ -155,17 +155,17 @@
 			path = SHSModalTransitionDemoUITests;
 			sourceTree = "<group>";
 		};
-		3A5EC00B1BE6FE0600FD7136 /* SHSModalTransition */ = {
+		3A5EC0181BE76BE000FD7136 /* SHSModalTransition */ = {
 			isa = PBXGroup;
 			children = (
-				3A5EC00C1BE700B000FD7136 /* SHSPresentationController.h */,
-				3A5EC00D1BE700B000FD7136 /* SHSPresentationController.m */,
-				3A5EC00F1BE701CB00FD7136 /* UIViewController+SHSModalTransition.h */,
-				3A5EC0101BE701CB00FD7136 /* UIViewController+SHSModalTransition.m */,
-				3A5EC0121BE7240300FD7136 /* SHSAnimatedTransitioningController.h */,
-				3A5EC0131BE7240300FD7136 /* SHSAnimatedTransitioningController.m */,
+				3A5EC0191BE76BE000FD7136 /* SHSAnimatedTransitioningController.h */,
+				3A5EC01A1BE76BE000FD7136 /* SHSAnimatedTransitioningController.m */,
+				3A5EC01B1BE76BE000FD7136 /* SHSPresentationController.h */,
+				3A5EC01C1BE76BE000FD7136 /* SHSPresentationController.m */,
+				3A5EC01D1BE76BE000FD7136 /* UIViewController+SHSModalTransition.h */,
+				3A5EC01E1BE76BE000FD7136 /* UIViewController+SHSModalTransition.m */,
 			);
-			name = SHSModalTransition;
+			path = SHSModalTransition;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -301,13 +301,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3A5EC00E1BE700B000FD7136 /* SHSPresentationController.m in Sources */,
+				3A5EC0201BE76BE000FD7136 /* SHSPresentationController.m in Sources */,
 				3A5EC0171BE768C000FD7136 /* PresentedViewController.m in Sources */,
-				3A5EC0141BE7240300FD7136 /* SHSAnimatedTransitioningController.m in Sources */,
+				3A5EC01F1BE76BE000FD7136 /* SHSAnimatedTransitioningController.m in Sources */,
 				3A5EBFE01BE6FDFD00FD7136 /* ViewController.m in Sources */,
+				3A5EC0211BE76BE000FD7136 /* UIViewController+SHSModalTransition.m in Sources */,
 				3A5EBFDD1BE6FDFD00FD7136 /* AppDelegate.m in Sources */,
 				3A5EBFDA1BE6FDFD00FD7136 /* main.m in Sources */,
-				3A5EC0111BE701CB00FD7136 /* UIViewController+SHSModalTransition.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
