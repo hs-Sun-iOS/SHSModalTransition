@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3A3B73501BE84329009CFC22 /* SHSAnimatedTransitioningController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A3B734B1BE84329009CFC22 /* SHSAnimatedTransitioningController.m */; settings = {ASSET_TAGS = (); }; };
+		3A3B73511BE84329009CFC22 /* SHSPresentationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A3B734D1BE84329009CFC22 /* SHSPresentationController.m */; settings = {ASSET_TAGS = (); }; };
+		3A3B73521BE84329009CFC22 /* UIViewController+SHSModalTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A3B734F1BE84329009CFC22 /* UIViewController+SHSModalTransition.m */; settings = {ASSET_TAGS = (); }; };
 		3A5EBFDA1BE6FDFD00FD7136 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A5EBFD91BE6FDFD00FD7136 /* main.m */; };
 		3A5EBFDD1BE6FDFD00FD7136 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A5EBFDC1BE6FDFD00FD7136 /* AppDelegate.m */; };
 		3A5EBFE01BE6FDFD00FD7136 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A5EBFDF1BE6FDFD00FD7136 /* ViewController.m */; };
@@ -16,9 +19,6 @@
 		3A5EBFF31BE6FDFD00FD7136 /* SHSModalTransitionDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A5EBFF21BE6FDFD00FD7136 /* SHSModalTransitionDemoTests.m */; };
 		3A5EBFFE1BE6FDFD00FD7136 /* SHSModalTransitionDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A5EBFFD1BE6FDFD00FD7136 /* SHSModalTransitionDemoUITests.m */; };
 		3A5EC0171BE768C000FD7136 /* PresentedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A5EC0161BE768C000FD7136 /* PresentedViewController.m */; settings = {ASSET_TAGS = (); }; };
-		3A5EC01F1BE76BE000FD7136 /* SHSAnimatedTransitioningController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A5EC01A1BE76BE000FD7136 /* SHSAnimatedTransitioningController.m */; settings = {ASSET_TAGS = (); }; };
-		3A5EC0201BE76BE000FD7136 /* SHSPresentationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A5EC01C1BE76BE000FD7136 /* SHSPresentationController.m */; settings = {ASSET_TAGS = (); }; };
-		3A5EC0211BE76BE000FD7136 /* UIViewController+SHSModalTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A5EC01E1BE76BE000FD7136 /* UIViewController+SHSModalTransition.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +39,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3A3B734A1BE84329009CFC22 /* SHSAnimatedTransitioningController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SHSAnimatedTransitioningController.h; path = SHSModalTransition/SHSAnimatedTransitioningController.h; sourceTree = "<group>"; };
+		3A3B734B1BE84329009CFC22 /* SHSAnimatedTransitioningController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SHSAnimatedTransitioningController.m; path = SHSModalTransition/SHSAnimatedTransitioningController.m; sourceTree = "<group>"; };
+		3A3B734C1BE84329009CFC22 /* SHSPresentationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SHSPresentationController.h; path = SHSModalTransition/SHSPresentationController.h; sourceTree = "<group>"; };
+		3A3B734D1BE84329009CFC22 /* SHSPresentationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SHSPresentationController.m; path = SHSModalTransition/SHSPresentationController.m; sourceTree = "<group>"; };
+		3A3B734E1BE84329009CFC22 /* UIViewController+SHSModalTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIViewController+SHSModalTransition.h"; path = "SHSModalTransition/UIViewController+SHSModalTransition.h"; sourceTree = "<group>"; };
+		3A3B734F1BE84329009CFC22 /* UIViewController+SHSModalTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+SHSModalTransition.m"; path = "SHSModalTransition/UIViewController+SHSModalTransition.m"; sourceTree = "<group>"; };
 		3A5EBFD51BE6FDFD00FD7136 /* SHSModalTransitionDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SHSModalTransitionDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A5EBFD91BE6FDFD00FD7136 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		3A5EBFDB1BE6FDFD00FD7136 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -57,12 +63,6 @@
 		3A5EBFFF1BE6FDFD00FD7136 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3A5EC0151BE768C000FD7136 /* PresentedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PresentedViewController.h; sourceTree = "<group>"; };
 		3A5EC0161BE768C000FD7136 /* PresentedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PresentedViewController.m; sourceTree = "<group>"; };
-		3A5EC0191BE76BE000FD7136 /* SHSAnimatedTransitioningController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHSAnimatedTransitioningController.h; sourceTree = "<group>"; };
-		3A5EC01A1BE76BE000FD7136 /* SHSAnimatedTransitioningController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHSAnimatedTransitioningController.m; sourceTree = "<group>"; };
-		3A5EC01B1BE76BE000FD7136 /* SHSPresentationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHSPresentationController.h; sourceTree = "<group>"; };
-		3A5EC01C1BE76BE000FD7136 /* SHSPresentationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHSPresentationController.m; sourceTree = "<group>"; };
-		3A5EC01D1BE76BE000FD7136 /* UIViewController+SHSModalTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+SHSModalTransition.h"; sourceTree = "<group>"; };
-		3A5EC01E1BE76BE000FD7136 /* UIViewController+SHSModalTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+SHSModalTransition.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +90,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3A3B73491BE842CE009CFC22 /* SHSModalTransition */ = {
+			isa = PBXGroup;
+			children = (
+				3A3B734A1BE84329009CFC22 /* SHSAnimatedTransitioningController.h */,
+				3A3B734B1BE84329009CFC22 /* SHSAnimatedTransitioningController.m */,
+				3A3B734C1BE84329009CFC22 /* SHSPresentationController.h */,
+				3A3B734D1BE84329009CFC22 /* SHSPresentationController.m */,
+				3A3B734E1BE84329009CFC22 /* UIViewController+SHSModalTransition.h */,
+				3A3B734F1BE84329009CFC22 /* UIViewController+SHSModalTransition.m */,
+			);
+			name = SHSModalTransition;
+			sourceTree = "<group>";
+		};
 		3A5EBFCC1BE6FDFD00FD7136 = {
 			isa = PBXGroup;
 			children = (
@@ -113,7 +126,7 @@
 		3A5EBFD71BE6FDFD00FD7136 /* SHSModalTransitionDemo */ = {
 			isa = PBXGroup;
 			children = (
-				3A5EC0181BE76BE000FD7136 /* SHSModalTransition */,
+				3A3B73491BE842CE009CFC22 /* SHSModalTransition */,
 				3A5EBFDB1BE6FDFD00FD7136 /* AppDelegate.h */,
 				3A5EBFDC1BE6FDFD00FD7136 /* AppDelegate.m */,
 				3A5EBFDE1BE6FDFD00FD7136 /* ViewController.h */,
@@ -153,19 +166,6 @@
 				3A5EBFFF1BE6FDFD00FD7136 /* Info.plist */,
 			);
 			path = SHSModalTransitionDemoUITests;
-			sourceTree = "<group>";
-		};
-		3A5EC0181BE76BE000FD7136 /* SHSModalTransition */ = {
-			isa = PBXGroup;
-			children = (
-				3A5EC0191BE76BE000FD7136 /* SHSAnimatedTransitioningController.h */,
-				3A5EC01A1BE76BE000FD7136 /* SHSAnimatedTransitioningController.m */,
-				3A5EC01B1BE76BE000FD7136 /* SHSPresentationController.h */,
-				3A5EC01C1BE76BE000FD7136 /* SHSPresentationController.m */,
-				3A5EC01D1BE76BE000FD7136 /* UIViewController+SHSModalTransition.h */,
-				3A5EC01E1BE76BE000FD7136 /* UIViewController+SHSModalTransition.m */,
-			);
-			path = SHSModalTransition;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -301,11 +301,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3A5EC0201BE76BE000FD7136 /* SHSPresentationController.m in Sources */,
+				3A3B73511BE84329009CFC22 /* SHSPresentationController.m in Sources */,
 				3A5EC0171BE768C000FD7136 /* PresentedViewController.m in Sources */,
-				3A5EC01F1BE76BE000FD7136 /* SHSAnimatedTransitioningController.m in Sources */,
+				3A3B73501BE84329009CFC22 /* SHSAnimatedTransitioningController.m in Sources */,
 				3A5EBFE01BE6FDFD00FD7136 /* ViewController.m in Sources */,
-				3A5EC0211BE76BE000FD7136 /* UIViewController+SHSModalTransition.m in Sources */,
+				3A3B73521BE84329009CFC22 /* UIViewController+SHSModalTransition.m in Sources */,
 				3A5EBFDD1BE6FDFD00FD7136 /* AppDelegate.m in Sources */,
 				3A5EBFDA1BE6FDFD00FD7136 /* main.m in Sources */,
 			);
@@ -533,6 +533,7 @@
 				3A5EC0041BE6FDFD00FD7136 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3A5EC0051BE6FDFD00FD7136 /* Build configuration list for PBXNativeTarget "SHSModalTransitionDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -541,6 +542,7 @@
 				3A5EC0071BE6FDFD00FD7136 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3A5EC0081BE6FDFD00FD7136 /* Build configuration list for PBXNativeTarget "SHSModalTransitionDemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -549,6 +551,7 @@
 				3A5EC00A1BE6FDFD00FD7136 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
