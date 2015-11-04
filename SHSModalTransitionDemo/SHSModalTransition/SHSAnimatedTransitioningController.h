@@ -8,13 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
-typedef void(^TransitionAnimationBlock)(UIView *view,id<UIViewControllerContextTransitioning> transitionContext);
+typedef void(^TransitionAnimationBlock)(UIView *presentedView,id<UIViewControllerContextTransitioning> transitionContext);
 
 @interface SHSAnimatedTransitioningController : NSObject<UIViewControllerAnimatedTransitioning>
 
 @property (nonatomic,assign) BOOL presented;
 @property (nonatomic,assign) NSTimeInterval duration;
-@property (nonatomic,copy) TransitionAnimationBlock modalAnimation;
+@property (nonatomic,copy) TransitionAnimationBlock presentAnimation;
 @property (nonatomic,copy) TransitionAnimationBlock dismissAnimation;
 
 

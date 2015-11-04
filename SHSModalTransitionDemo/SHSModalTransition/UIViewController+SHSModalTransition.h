@@ -8,14 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-typedef void(^TransitionAnimationBlock)(UIView *view,id<UIViewControllerContextTransitioning> transitionContext);
+typedef void(^TransitionAnimationBlock)(UIView *presentedView,id<UIViewControllerContextTransitioning> transitionContext);
 
 @interface UIViewController(ModalTransition)<UIViewControllerTransitioningDelegate>
 
-@property (nonatomic,copy) TransitionAnimationBlock modalAnimation;
-@property (nonatomic,copy) TransitionAnimationBlock dismissAnimation;
-@property (nonatomic,assign) NSTimeInterval duration;
-
-- (void)setModalAnimation:(TransitionAnimationBlock)modalAnimation andDismissAnimation:(TransitionAnimationBlock)dismissAnimation;
+// 开启自定义modal动画并设置动画时间、present动画、dismiss动画
+- (void)setAnimationDuration:(NSTimeInterval)duration andPresentAnimation:(TransitionAnimationBlock)presentAnimation withDismissAnimation:(TransitionAnimationBlock)dismissAnimation;
 
 @end

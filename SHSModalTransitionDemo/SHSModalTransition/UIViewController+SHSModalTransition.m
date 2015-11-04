@@ -12,17 +12,16 @@
 #import <objc/runtime.h>
 
 @implementation UIViewController(ModalTransition)
-@dynamic modalAnimation;
-@dynamic dismissAnimation;
-@dynamic duration;
 
-- (void)setModalAnimation:(TransitionAnimationBlock)modalAnimation andDismissAnimation:(TransitionAnimationBlock)dismissAnimation {
-    self.modalAnimation = modalAnimation;
+- (void)setAnimationDuration:(NSTimeInterval)duration andPresentAnimation:(TransitionAnimationBlock)presentAnimation withDismissAnimation:(TransitionAnimationBlock)dismissAnimation {
+    self.presentAnimation = presentAnimation;
     self.dismissAnimation = dismissAnimation;
+    self.duration = duration;
     self.modalPresentationStyle = UIModalPresentationCustom;
     self.transitioningDelegate = self;
 }
 
+#pragma mark - UIViewControllerTransitioningDelegate
 - (UIPresentationController *)presentationControllerForPresentedViewController:(UIViewController *)presented presentingViewController:(UIViewController *)presenting sourceViewController:(UIViewController *)source {
     SHSPresentationController *presentation = [[SHSPresentationController alloc] initWithPresentedViewController:presented presentingViewController:source];
     return presentation;
@@ -31,7 +30,7 @@
 - (id<UIViewControllerAnimatedTransitioning>)animationControllerForPresentedController:(UIViewController *)presented presentingController:(UIViewController *)presenting sourceController:(UIViewController *)source {
     SHSAnimatedTransitioningController *animatedTransitioning = [[SHSAnimatedTransitioningController alloc] init];
     animatedTransitioning.presented = YES;
-    animatedTransitioning.modalAnimation = self.modalAnimation;
+    animatedTransitioning.presentAnimation = self.presentAnimation;
     animatedTransitioning.duration = self.duration;
     return animatedTransitioning;
 }
@@ -44,12 +43,13 @@
     return animatedTransitioning;
 }
 
-- (void)setModalAnimation:(TransitionAnimationBlock)modalAnimation {
-    objc_setAssociatedObject(self, @selector(modalAnimation), modalAnimation, OBJC_ASSOCIATION_COPY_NONATOMIC);
+#pragma mark - runtime关联属性
+- (void)setPresentAnimation:(TransitionAnimationBlock)presentAnimation {
+    objc_setAssociatedObject(self, @selector(presentAnimation), presentAnimation, OBJC_ASSOCIATION_COPY_NONATOMIC);
 }
 
-- (TransitionAnimationBlock)modalAnimation {
-    return objc_getAssociatedObject(self, @selector(modalAnimation));
+- (TransitionAnimationBlock)presentAnimation {
+    return objc_getAssociatedObject(self, @selector(presentAnimation));
 }
 
 - (void)setDismissAnimation:(TransitionAnimationBlock)dismissAnimation {
@@ -61,7 +61,7 @@
 }
 
 - (void)setDuration:(NSTimeInterval)duration {
-    objc_setAssociatedObject(self, @selector(duration), @(duration), OBJC_ASSOCIATION_ASSIGN);
+    objc_setAssociatedObject(self, @selector(duration), [NSNumber numberWithDouble:duration], OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
 
 - (NSTimeInterval)duration {

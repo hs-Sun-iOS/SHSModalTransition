@@ -15,8 +15,8 @@
 }
 
 - (void)animateTransition:(id<UIViewControllerContextTransitioning>)transitionContext {
-    if (self.presented && self.modalAnimation) {
-        self.modalAnimation([transitionContext viewForKey:UITransitionContextToViewKey],transitionContext);
+    if (self.presented && self.presentAnimation) {
+        self.presentAnimation([transitionContext viewForKey:UITransitionContextToViewKey],transitionContext);
     } else if (!self.presented && self.dismissAnimation) {
         self.dismissAnimation([transitionContext viewForKey:UITransitionContextFromViewKey],transitionContext);
     }

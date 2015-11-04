@@ -15,15 +15,14 @@
 //}
 
 - (void)presentationTransitionWillBegin {
+
     [self.containerView addSubview:self.presentedView];
 }
 
 - (void)presentationTransitionDidEnd:(BOOL)completed {
-    
 }
 
 - (void)dismissalTransitionWillBegin {
-    
 }
 
 - (void)dismissalTransitionDidEnd:(BOOL)completed {
