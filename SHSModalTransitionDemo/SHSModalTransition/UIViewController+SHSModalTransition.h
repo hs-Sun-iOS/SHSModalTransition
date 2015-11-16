@@ -12,7 +12,9 @@ typedef void(^TransitionAnimationBlock)(UIView *presentedView,id<UIViewControlle
 
 @interface UIViewController(ModalTransition)<UIViewControllerTransitioningDelegate>
 
-// 开启自定义modal动画并设置动画时间、present动画、dismiss动画
+/* 开启自定义modal动画并设置动画时间、present动画、dismiss动画
+   设置的动画时间需和具体的动画时间相同
+ */
 - (void)setAnimationDuration:(NSTimeInterval)duration andPresentAnimation:(TransitionAnimationBlock)presentAnimation withDismissAnimation:(TransitionAnimationBlock)dismissAnimation;
 
 @end

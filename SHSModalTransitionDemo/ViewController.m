@@ -65,8 +65,9 @@
     
     [self presentViewController:vc animated:YES completion:nil];
 }
+#warning 动画结束后必须调用 completeTransition：方法  否则页面不能实现交互
 - (void)animationDidStop:(CAAnimation *)anim finished:(BOOL)flag {
-    //动画结束后必须调用 completeTransition：方法  否则页面不能实现交互
+   //动画结束后必须调用 completeTransition：方法  否则页面不能实现交互
     [_transitionContext completeTransition:YES];
 }
 
